@@ -12,19 +12,25 @@
 		<img id ="img1" src="https://s13768.pcdn.co/wp-content/new-galleries/2018/10/zayn-maliks-secret-sex-session-with-masseuse-0001.jpg" alt="not visible"/>
 		<img id="img2" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201806/zayn_malik.png?emn24LjTMQ4Ozhd.VH6Ad86oSUDbP5og"/>
 	</div>
+	<div id="my bar">
+		growing..
+	</div>
 <script type="text/javascript">
 	
 	var a=document.getElementById('container');
-	var b=document.getElementById('img1');
-	var c=document.getElementById('img2');
-	var i = 0;
-  function change(){
-if(i==0){
-     b.style.left = "-500px";
-		}b.syle.left="0px";
-		setInterval(change(),1000);
-
-	}
+function move() {
+  var elem = document.getElementById("myBar"); 
+  var width = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
 	
 </script>
 </body>
