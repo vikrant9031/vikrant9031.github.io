@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<button onclick="change()"></button>
+	<button onclick=""></button>
 	<div id="container">
 		<img id ="img1" src="https://s13768.pcdn.co/wp-content/new-galleries/2018/10/zayn-maliks-secret-sex-session-with-masseuse-0001.jpg" alt="not visible"/>
 		<img id="img2" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201806/zayn_malik.png?emn24LjTMQ4Ozhd.VH6Ad86oSUDbP5og"/>
@@ -17,8 +17,7 @@
 	</div>
 <script type="text/javascript">
 	
-	var a=document.getElementById('container');
-function move() {
+setInterval(function move() {
   var elem = document.getElementById("myBar"); 
   var width = 0;
   var id = setInterval(frame, 10);
@@ -30,7 +29,7 @@ function move() {
       elem.style.width = width + '%'; 
     }
   }
-}
+},2000);
 	
 </script>
 </body>
